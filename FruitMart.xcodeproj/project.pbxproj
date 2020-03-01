@@ -20,6 +20,7 @@
 		5238EAF7240C1AF40079E99D /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAF6240C1AF40079E99D /* BundleExtension.swift */; };
 		5238EAF9240C1B6A0079E99D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAF8240C1B6A0079E99D /* Store.swift */; };
 		5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAFA240C21900079E99D /* ProductDetailView.swift */; };
+		5238EAFE240C406C0079E99D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAFD240C406C0079E99D /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5238EAF6240C1AF40079E99D /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		5238EAF8240C1B6A0079E99D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		5238EAFA240C21900079E99D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		5238EAFD240C406C0079E99D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				5238EAF1240C170E0079E99D /* Extension */,
+				5238EAFC240C405E0079E99D /* CustomView */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -166,6 +169,14 @@
 				5238EAF6240C1AF40079E99D /* BundleExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5238EAFC240C405E0079E99D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				5238EAFD240C406C0079E99D /* Preview.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			files = (
 				5238EAF0240C16480079E99D /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
+				5238EAFE240C406C0079E99D /* Preview.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAF9240C1B6A0079E99D /* Store.swift in Sources */,
 				5238EAF7240C1AF40079E99D /* BundleExtension.swift in Sources */,
