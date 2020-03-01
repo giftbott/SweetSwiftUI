@@ -14,8 +14,13 @@ struct Home: View {
   // MARK: Body
   
   var body: some View {
-    List(store.products) { product in
-      ProductRow(product: product)
+    NavigationView {
+      List(store.products) { product in
+        NavigationLink(destination: Text("상세 정보")) {
+          ProductRow(product: product)
+        }
+      }
+      .navigationBarTitle("과일마트")
     }
   }
 }
