@@ -15,6 +15,7 @@
 		5238EAD8240BAC930079E99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5238EAD6240BAC930079E99D /* LaunchScreen.storyboard */; };
 		5238EAE7240BAEBF0079E99D /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5238EAE6240BAEBC0079E99D /* ProductData.json */; };
 		5238EAF0240C16480079E99D /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAEF240C16480079E99D /* ProductRow.swift */; };
+		5238EAF3240C17250079E99D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAF2240C17250079E99D /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5238EAD9240BAC930079E99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5238EAE6240BAEBC0079E99D /* ProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		5238EAEF240C16480079E99D /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		5238EAF2240C17250079E99D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,17 @@
 		5238EAEC240BF9FE0079E99D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5238EAF1240C170E0079E99D /* Extension */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		5238EAF1240C170E0079E99D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5238EAF2240C17250079E99D /* ColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
+				5238EAF3240C17250079E99D /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
