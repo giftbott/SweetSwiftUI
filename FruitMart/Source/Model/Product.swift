@@ -9,12 +9,16 @@
 import Foundation
 
 struct Product {
+  let id: UUID = UUID()
   let name: String
   let imageName: String
   let price: Int
   let description: String
   var isFavorite: Bool = false
 }
+
+extension Product: Decodable {}
+extension Product: Identifiable {}
 
 
 let productSamples = [
