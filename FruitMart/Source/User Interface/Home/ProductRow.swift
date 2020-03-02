@@ -22,7 +22,7 @@ struct ProductRow: View {
       productImage
       productDescription
     }
-    .frame(height: 150)
+    .frame(height: store.appSetting.productRowHeight)
     .background(Color.primary.colorInvert())
     .cornerRadius(6)
     .shadow(color: .primaryShadow, radius: 1, x: 2, y: 2)
