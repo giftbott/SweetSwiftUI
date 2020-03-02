@@ -22,6 +22,7 @@
 		5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAFA240C21900079E99D /* ProductDetailView.swift */; };
 		5238EAFE240C406C0079E99D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EAFD240C406C0079E99D /* Preview.swift */; };
 		5238EB02240C42850079E99D /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB01240C42850079E99D /* QuantitySelector.swift */; };
+		5238EB04240D15990079E99D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB03240D15990079E99D /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5238EAFA240C21900079E99D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		5238EAFD240C406C0079E99D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		5238EB01240C42850079E99D /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		5238EB03240D15990079E99D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				5238EAEF240C16480079E99D /* ProductRow.swift */,
 				5238EAFA240C21900079E99D /* ProductDetailView.swift */,
 				5238EB01240C42850079E99D /* QuantitySelector.swift */,
+				5238EB03240D15990079E99D /* FavoriteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				5238EAF0240C16480079E99D /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EAFE240C406C0079E99D /* Preview.swift in Sources */,
+				5238EB04240D15990079E99D /* FavoriteButton.swift in Sources */,
 				5238EB02240C42850079E99D /* QuantitySelector.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAF9240C1B6A0079E99D /* Store.swift in Sources */,

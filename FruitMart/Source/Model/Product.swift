@@ -19,6 +19,7 @@ struct Product {
 
 extension Product: Decodable {}
 extension Product: Identifiable {}
+extension Product: Equatable {}
 
 
 let productSamples = [
