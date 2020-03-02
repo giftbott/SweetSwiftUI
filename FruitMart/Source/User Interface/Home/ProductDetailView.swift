@@ -14,6 +14,7 @@ struct ProductDetailView: View {
   
   @State private var quantity: Int = 1
   @State private var showingAlert: Bool = false
+  @State private var showingPopup: Bool = false
   
   // MARK: Body
   
@@ -22,6 +23,7 @@ struct ProductDetailView: View {
       productImage
       orderView
     }
+    .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
     .edgesIgnoringSafeArea(.top)
     .alert(isPresented: $showingAlert) { confirmAlert }
   }
@@ -127,6 +129,7 @@ private extension ProductDetailView {
   
   func placeOrder() {
     store.placeOrder(product: product, quantity: quantity)
+    showingPopup = true
   }
 }
 
