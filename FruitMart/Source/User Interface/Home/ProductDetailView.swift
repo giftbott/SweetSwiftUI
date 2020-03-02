@@ -33,9 +33,7 @@ private extension ProductDetailView {
   
   var productImage: some View {
     GeometryReader { _ in
-      Image(self.product.imageName)
-        .resizable()
-        .scaledToFill()
+      ResizedImage(self.product.imageName)
     }
   }
   

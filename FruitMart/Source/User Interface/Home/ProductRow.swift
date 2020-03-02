@@ -31,9 +31,7 @@ private extension ProductRow {
   // MARK: View
   
   var productImage: some View {
-    Image(product.imageName)
-      .resizable()
-      .scaledToFill()
+    ResizedImage(product.imageName)
       .frame(width: 140)
       .clipped()
   }
@@ -66,8 +64,7 @@ private extension ProductRow {
       
       FavoriteButton(product: product)
       
-      Image(systemName: "cart")
-        .foregroundColor(.peach)
+      Symbol("cart", color: .peach)
         .frame(width: 32, height: 32)
     }
   }

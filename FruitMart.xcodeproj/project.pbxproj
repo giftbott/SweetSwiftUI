@@ -24,6 +24,8 @@
 		5238EB02240C42850079E99D /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB01240C42850079E99D /* QuantitySelector.swift */; };
 		5238EB04240D15990079E99D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB03240D15990079E99D /* FavoriteButton.swift */; };
 		5238EB06240D16E60079E99D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB05240D16E60079E99D /* Order.swift */; };
+		5238EB08240D2C150079E99D /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB07240D2C150079E99D /* ResizedImage.swift */; };
+		5238EB0A240D2C1C0079E99D /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB09240D2C1C0079E99D /* Symbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		5238EB01240C42850079E99D /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		5238EB03240D15990079E99D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		5238EB05240D16E60079E99D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5238EB07240D2C150079E99D /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
+		5238EB09240D2C1C0079E99D /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				5238EAFD240C406C0079E99D /* Preview.swift */,
+				5238EB09240D2C1C0079E99D /* Symbol.swift */,
+				5238EB07240D2C150079E99D /* ResizedImage.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -268,8 +274,10 @@
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAF9240C1B6A0079E99D /* Store.swift in Sources */,
 				5238EAF7240C1AF40079E99D /* BundleExtension.swift in Sources */,
+				5238EB08240D2C150079E99D /* ResizedImage.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				5238EAF3240C17250079E99D /* ColorExtension.swift in Sources */,
+				5238EB0A240D2C1C0079E99D /* Symbol.swift in Sources */,
 				5238EB06240D16E60079E99D /* Order.swift in Sources */,
 				5238EAF5240C18C50079E99D /* Product.swift in Sources */,
 				5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */,
