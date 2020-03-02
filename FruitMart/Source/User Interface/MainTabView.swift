@@ -29,6 +29,7 @@ struct MainTabView: View {
     }
     .accentColor(.peach)
     .edgesIgnoringSafeArea(.top)
+    .statusBar(hidden: selectedTab == .recipe)
   }
 }
 
@@ -44,7 +45,7 @@ private extension MainTabView {
   }
   
   var recipe: some View {
-    Text("레시피")
+    RecipeView()
       .tag(Tabs.recipe)
       .tabItem(image: "book", text: "레시피")
   }
