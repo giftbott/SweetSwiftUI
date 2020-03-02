@@ -17,7 +17,7 @@ struct Product {
   var isFavorite: Bool = false
 }
 
-extension Product: Decodable {}
+extension Product: Codable {}
 extension Product: Identifiable {}
 extension Product: Equatable {}
 
