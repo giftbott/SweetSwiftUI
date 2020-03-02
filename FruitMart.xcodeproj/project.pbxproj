@@ -33,6 +33,9 @@
 		5238EB16240D4E090079E99D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB15240D4E090079E99D /* MainTabView.swift */; };
 		5238EB18240D53ED0079E99D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB17240D53ED0079E99D /* Recipe.swift */; };
 		5238EB1B240D541F0079E99D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB1A240D541F0079E99D /* RecipeView.swift */; };
+		5238EB23240D55C10079E99D /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB22240D55C10079E99D /* ShapeClipModifier.swift */; };
+		5238EB25240D55D00079E99D /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB24240D55D00079E99D /* AnyTransitionExtension.swift */; };
+		5238EB27240D55E00079E99D /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB26240D55E00079E99D /* Stripes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		5238EB15240D4E090079E99D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		5238EB17240D53ED0079E99D /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		5238EB1A240D541F0079E99D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		5238EB22240D55C10079E99D /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
+		5238EB24240D55D00079E99D /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
+		5238EB26240D55E00079E99D /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,7 @@
 			children = (
 				5238EAF2240C17250079E99D /* ColorExtension.swift */,
 				5238EAF6240C1AF40079E99D /* BundleExtension.swift */,
+				5238EB24240D55D00079E99D /* AnyTransitionExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -211,6 +218,7 @@
 				5238EAFD240C406C0079E99D /* Preview.swift */,
 				5238EB09240D2C1C0079E99D /* Symbol.swift */,
 				5238EB07240D2C150079E99D /* ResizedImage.swift */,
+				5238EB26240D55E00079E99D /* Stripes.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				5238EB0F240D36220079E99D /* Popup.swift */,
+				5238EB22240D55C10079E99D /* ShapeClipModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -326,12 +335,15 @@
 				5238EB08240D2C150079E99D /* ResizedImage.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				5238EAF3240C17250079E99D /* ColorExtension.swift in Sources */,
+				5238EB25240D55D00079E99D /* AnyTransitionExtension.swift in Sources */,
 				5238EB12240D36E00079E99D /* OrderCompletedMessage.swift in Sources */,
 				5238EB0A240D2C1C0079E99D /* Symbol.swift in Sources */,
 				5238EB06240D16E60079E99D /* Order.swift in Sources */,
 				5238EAF5240C18C50079E99D /* Product.swift in Sources */,
 				5238EB0D240D35A90079E99D /* ShrinkButtonStyle.swift in Sources */,
+				5238EB27240D55E00079E99D /* Stripes.swift in Sources */,
 				5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */,
+				5238EB23240D55C10079E99D /* ShapeClipModifier.swift in Sources */,
 				5238EB16240D4E090079E99D /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

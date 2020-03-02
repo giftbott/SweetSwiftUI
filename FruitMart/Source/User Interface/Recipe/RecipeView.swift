@@ -62,6 +62,8 @@ private extension RecipeView {
       ResizedImage(recipes[currentIndex].imageName,
                    contentMode: .fit)
         .padding(.horizontal)
+        .transition(.stripes())
+        .id(currentIndex)
       
       Spacer()
       
