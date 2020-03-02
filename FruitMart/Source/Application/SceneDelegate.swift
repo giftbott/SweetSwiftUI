@@ -17,8 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     configureAppearance()
     
-    let rootView = Home()
-      .accentColor(Color.primary)
+    let rootView = MainTabView()
       .environmentObject(Store())
     
     if let windowScene = scene as? UIWindowScene {

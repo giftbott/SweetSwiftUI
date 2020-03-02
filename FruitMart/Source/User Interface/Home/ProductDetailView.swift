@@ -47,8 +47,8 @@ private extension ProductDetailView {
         self.priceInfo
         self.placeOrderButton
       }
-      .frame(height: $0.size.height + 10)
       .padding(32)
+      .frame(height: $0.size.height + 10)
       .background(Color.white)
       .cornerRadius(16)
       .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: -5)
