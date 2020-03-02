@@ -36,6 +36,8 @@
 		5238EB23240D55C10079E99D /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB22240D55C10079E99D /* ShapeClipModifier.swift */; };
 		5238EB25240D55D00079E99D /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB24240D55D00079E99D /* AnyTransitionExtension.swift */; };
 		5238EB27240D55E00079E99D /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB26240D55E00079E99D /* Stripes.swift */; };
+		5238EB2A240D56800079E99D /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB29240D56800079E99D /* FruitCard.swift */; };
+		5238EB2C240D568C0079E99D /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB2B240D568C0079E99D /* ImageGallery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		5238EB22240D55C10079E99D /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
 		5238EB24240D55D00079E99D /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
 		5238EB26240D55E00079E99D /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
+		5238EB29240D56800079E99D /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		5238EB2B240D568C0079E99D /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 				5238EB15240D4E090079E99D /* MainTabView.swift */,
 				5238EAE5240BAE840079E99D /* Home */,
 				5238EB19240D54120079E99D /* Recipe */,
+				5238EB28240D56560079E99D /* ImageGallery */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -248,6 +253,15 @@
 			path = Recipe;
 			sourceTree = "<group>";
 		};
+		5238EB28240D56560079E99D /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				5238EB29240D56800079E99D /* FruitCard.swift */,
+				5238EB2B240D568C0079E99D /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5238EB2C240D568C0079E99D /* ImageGallery.swift in Sources */,
 				5238EB14240D4A5B0079E99D /* FavoriteProductScrollView.swift in Sources */,
 				5238EAF0240C16480079E99D /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
@@ -332,6 +347,7 @@
 				5238EAF7240C1AF40079E99D /* BundleExtension.swift in Sources */,
 				5238EB18240D53ED0079E99D /* Recipe.swift in Sources */,
 				5238EB10240D36220079E99D /* Popup.swift in Sources */,
+				5238EB2A240D56800079E99D /* FruitCard.swift in Sources */,
 				5238EB08240D2C150079E99D /* ResizedImage.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				5238EAF3240C17250079E99D /* ColorExtension.swift in Sources */,

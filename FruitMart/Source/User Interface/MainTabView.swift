@@ -51,7 +51,7 @@ private extension MainTabView {
   }
   
   var imageGallery: some View {
-    Text("이미지 갤러리")
+    ImageGallery()
       .tag(Tabs.gallery)
       .tabItem(image: "photo.on.rectangle", text: "갤러리")
   }

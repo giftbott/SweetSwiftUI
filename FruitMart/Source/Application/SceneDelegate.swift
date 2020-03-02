@@ -36,5 +36,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       .foregroundColor: UIColor(named: "peach")!
     ]
     UITableView.appearance().backgroundColor = .clear
+    UISlider.appearance().thumbTintColor = UIColor(named: "peach")
   }
 }
