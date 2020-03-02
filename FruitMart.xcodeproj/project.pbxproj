@@ -26,6 +26,7 @@
 		5238EB06240D16E60079E99D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB05240D16E60079E99D /* Order.swift */; };
 		5238EB08240D2C150079E99D /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB07240D2C150079E99D /* ResizedImage.swift */; };
 		5238EB0A240D2C1C0079E99D /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB09240D2C1C0079E99D /* Symbol.swift */; };
+		5238EB0D240D35A90079E99D /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB0C240D35A90079E99D /* ShrinkButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		5238EB05240D16E60079E99D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		5238EB07240D2C150079E99D /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		5238EB09240D2C1C0079E99D /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		5238EB0C240D35A90079E99D /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				5238EAF1240C170E0079E99D /* Extension */,
 				5238EAFC240C405E0079E99D /* CustomView */,
+				5238EB0B240D35970079E99D /* CustomStyle */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -192,6 +195,14 @@
 				5238EB07240D2C150079E99D /* ResizedImage.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		5238EB0B240D35970079E99D /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				5238EB0C240D35A90079E99D /* ShrinkButtonStyle.swift */,
+			);
+			path = CustomStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				5238EB0A240D2C1C0079E99D /* Symbol.swift in Sources */,
 				5238EB06240D16E60079E99D /* Order.swift in Sources */,
 				5238EAF5240C18C50079E99D /* Product.swift in Sources */,
+				5238EB0D240D35A90079E99D /* ShrinkButtonStyle.swift in Sources */,
 				5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

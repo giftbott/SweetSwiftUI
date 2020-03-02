@@ -95,6 +95,7 @@ private extension ProductDetailView {
           .foregroundColor(Color.white))
         .padding(.vertical, 8)
     }
+    .buttonStyle(ShrinkButtonStyle())
   }
   
   var confirmAlert: Alert {
