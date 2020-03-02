@@ -42,6 +42,7 @@
 		5238EB31240D59390079E99D /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB30240D59390079E99D /* OrderListView.swift */; };
 		5238EB33240D5A400079E99D /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB32240D5A400079E99D /* OrderRow.swift */; };
 		5238EB37240D65520079E99D /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB36240D65520079E99D /* AppSetting.swift */; };
+		5238EB39240D6EF50079E99D /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB38240D6EF50079E99D /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		5238EB30240D59390079E99D /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		5238EB32240D5A400079E99D /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		5238EB36240D65520079E99D /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		5238EB38240D6EF50079E99D /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				5238EB2E240D58DE0079E99D /* MyPage.swift */,
 				5238EB30240D59390079E99D /* OrderListView.swift */,
 				5238EB32240D5A400079E99D /* OrderRow.swift */,
+				5238EB38240D6EF50079E99D /* ImagePickerView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				5238EB02240C42850079E99D /* QuantitySelector.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAF9240C1B6A0079E99D /* Store.swift in Sources */,
+				5238EB39240D6EF50079E99D /* ImagePickerView.swift in Sources */,
 				5238EAF7240C1AF40079E99D /* BundleExtension.swift in Sources */,
 				5238EB18240D53ED0079E99D /* Recipe.swift in Sources */,
 				5238EB10240D36220079E99D /* Popup.swift in Sources */,

@@ -11,6 +11,7 @@ import SwiftUI
 struct MyPage: View {
   @EnvironmentObject var store: Store
   @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
+  @State private var isPickerPresented: Bool = false
   @State private var nickname: String = ""
   private let pickerDataSource: [CGFloat] = [140, 150, 160]
   
@@ -27,6 +28,9 @@ struct MyPage: View {
         }
       }
       .navigationBarTitle("마이 페이지")
+    }
+    .sheet(isPresented: $isPickerPresented) {
+      ImagePickerView(pickedImage: self.$pickedImage)
     }
   }
 }
@@ -54,6 +58,7 @@ private extension MyPage {
   
   var pickImageButton: some View {
     Button(action: {
+      self.isPickerPresented = true
     }) {
       Circle()
         .fill(Color.white)
