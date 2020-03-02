@@ -10,16 +10,21 @@ import SwiftUI
 
 struct MyPage: View {
   @EnvironmentObject var store: Store
-  
+  @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
+  @State private var nickname: String = ""
   private let pickerDataSource: [CGFloat] = [140, 150, 160]
   
   // MARK: Body
   
   var body: some View {
     NavigationView {
-      Form {
-        orderInfoSection
-        appSettingSection
+      VStack {
+        userInfo
+        
+        Form {
+          orderInfoSection
+          appSettingSection
+        }
       }
       .navigationBarTitle("마이 페이지")
     }
@@ -29,6 +34,42 @@ struct MyPage: View {
 
 private extension MyPage {
   // MARK: View
+  
+  var userInfo: some View {
+    VStack {
+      profileImage
+      nicknameTextField
+    }
+    .frame(maxWidth: .infinity, minHeight: 200)
+    .background(Color.background)
+  }
+  
+  var profileImage: some View {
+    pickedImage
+      .resizable().scaledToFill()
+      .clipShape(Circle())
+      .frame(width: 100, height: 100)
+      .overlay(pickImageButton.offset(x: 8, y: 0), alignment: .bottomTrailing)
+  }
+  
+  var pickImageButton: some View {
+    Button(action: {
+    }) {
+      Circle()
+        .fill(Color.white)
+        .shadow(color: .primaryShadow, radius: 2, x: 2, y: 2)
+        .overlay(Image("pencil").foregroundColor(.black))
+        .frame(width: 32, height: 32)
+    }
+  }
+  
+  var nicknameTextField: some View {
+    TextField("닉네임", text: $nickname)
+      .font(.system(size: 25, weight: .medium))
+      .textContentType(.nickname)
+      .multilineTextAlignment(.center)
+      .autocapitalization(.none)
+  }
   
   var orderInfoSection: some View {
     Section(header: Text("주문 정보").fontWeight(.medium)) {
