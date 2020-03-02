@@ -38,6 +38,9 @@
 		5238EB27240D55E00079E99D /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB26240D55E00079E99D /* Stripes.swift */; };
 		5238EB2A240D56800079E99D /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB29240D56800079E99D /* FruitCard.swift */; };
 		5238EB2C240D568C0079E99D /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB2B240D568C0079E99D /* ImageGallery.swift */; };
+		5238EB2F240D58DE0079E99D /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB2E240D58DE0079E99D /* MyPage.swift */; };
+		5238EB31240D59390079E99D /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB30240D59390079E99D /* OrderListView.swift */; };
+		5238EB33240D5A400079E99D /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB32240D5A400079E99D /* OrderRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		5238EB26240D55E00079E99D /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
 		5238EB29240D56800079E99D /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
 		5238EB2B240D568C0079E99D /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
+		5238EB2E240D58DE0079E99D /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		5238EB30240D59390079E99D /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		5238EB32240D5A400079E99D /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 				5238EAE5240BAE840079E99D /* Home */,
 				5238EB19240D54120079E99D /* Recipe */,
 				5238EB28240D56560079E99D /* ImageGallery */,
+				5238EB2D240D58C00079E99D /* MyPage */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -262,6 +269,16 @@
 			path = ImageGallery;
 			sourceTree = "<group>";
 		};
+		5238EB2D240D58C00079E99D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				5238EB2E240D58DE0079E99D /* MyPage.swift */,
+				5238EB30240D59390079E99D /* OrderListView.swift */,
+				5238EB32240D5A400079E99D /* OrderRow.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,9 +354,11 @@
 				5238EB2C240D568C0079E99D /* ImageGallery.swift in Sources */,
 				5238EB14240D4A5B0079E99D /* FavoriteProductScrollView.swift in Sources */,
 				5238EAF0240C16480079E99D /* ProductRow.swift in Sources */,
+				5238EB31240D59390079E99D /* OrderListView.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EAFE240C406C0079E99D /* Preview.swift in Sources */,
 				5238EB1B240D541F0079E99D /* RecipeView.swift in Sources */,
+				5238EB2F240D58DE0079E99D /* MyPage.swift in Sources */,
 				5238EB04240D15990079E99D /* FavoriteButton.swift in Sources */,
 				5238EB02240C42850079E99D /* QuantitySelector.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
@@ -359,6 +378,7 @@
 				5238EB0D240D35A90079E99D /* ShrinkButtonStyle.swift in Sources */,
 				5238EB27240D55E00079E99D /* Stripes.swift in Sources */,
 				5238EAFB240C21900079E99D /* ProductDetailView.swift in Sources */,
+				5238EB33240D5A400079E99D /* OrderRow.swift in Sources */,
 				5238EB23240D55C10079E99D /* ShapeClipModifier.swift in Sources */,
 				5238EB16240D4E090079E99D /* MainTabView.swift in Sources */,
 			);
