@@ -29,6 +29,7 @@
 		5238EB0D240D35A90079E99D /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB0C240D35A90079E99D /* ShrinkButtonStyle.swift */; };
 		5238EB10240D36220079E99D /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB0F240D36220079E99D /* Popup.swift */; };
 		5238EB12240D36E00079E99D /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB11240D36E00079E99D /* OrderCompletedMessage.swift */; };
+		5238EB14240D4A5B0079E99D /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EB13240D4A5B0079E99D /* FavoriteProductScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		5238EB0C240D35A90079E99D /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
 		5238EB0F240D36220079E99D /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		5238EB11240D36E00079E99D /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
+		5238EB13240D4A5B0079E99D /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				5238EB01240C42850079E99D /* QuantitySelector.swift */,
 				5238EB03240D15990079E99D /* FavoriteButton.swift */,
 				5238EB11240D36E00079E99D /* OrderCompletedMessage.swift */,
+				5238EB13240D4A5B0079E99D /* FavoriteProductScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5238EB14240D4A5B0079E99D /* FavoriteProductScrollView.swift in Sources */,
 				5238EAF0240C16480079E99D /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EAFE240C406C0079E99D /* Preview.swift in Sources */,
