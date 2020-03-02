@@ -13,6 +13,8 @@ struct ProductRow: View {
   let product: Product
   @Binding var quickOrder: Product?
   
+  @State private var willAppear: Bool = false
+  
   // MARK: Body
   
   var body: some View {
@@ -25,6 +27,9 @@ struct ProductRow: View {
     .cornerRadius(6)
     .shadow(color: .primaryShadow, radius: 1, x: 2, y: 2)
     .padding(.vertical, 8)
+    .opacity(willAppear ? 1 : 0)
+    .animation(.easeInOut(duration: 0.4))
+    .onAppear { self.willAppear = true }
   }
 }
 

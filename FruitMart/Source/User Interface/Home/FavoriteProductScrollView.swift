@@ -23,6 +23,7 @@ struct FavoriteProductScrollView: View {
       }
     }
     .padding()
+    .transition(.slide)
   }
 }
 
@@ -42,7 +43,9 @@ private extension FavoriteProductScrollView {
       Spacer()
     }
     .padding(.bottom, 8)
-    .onTapGesture { self.showingImage.toggle() }
+    .onTapGesture {
+      withAnimation { self.showingImage.toggle() }
+    }
   }
   
   var products: some View {
@@ -56,6 +59,7 @@ private extension FavoriteProductScrollView {
         }
       }
     }
+    .animation(.spring(dampingFraction: 0.78))
   }
   
   func eachProduct(_ product: Product) -> some View {

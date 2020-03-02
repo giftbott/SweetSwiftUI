@@ -15,17 +15,21 @@ struct ProductDetailView: View {
   @State private var quantity: Int = 1
   @State private var showingAlert: Bool = false
   @State private var showingPopup: Bool = false
+  @State private var willAppear: Bool = false
   
   // MARK: Body
   
   var body: some View {
     VStack(spacing: 0) {
-      productImage
+      if willAppear {
+        productImage
+      }
       orderView
     }
     .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
     .edgesIgnoringSafeArea(.top)
     .alert(isPresented: $showingAlert) { confirmAlert }
+    .onAppear { self.willAppear = true }
   }
 }
 
@@ -34,9 +38,12 @@ private extension ProductDetailView {
   // MARK: View
   
   var productImage: some View {
-    GeometryReader { _ in
+    let effect = AnyTransition.scale.combined(with: .opacity)
+      .animation(Animation.easeInOut(duration: 0.4).delay(0.05))
+    return GeometryReader { _ in
       ResizedImage(self.product.imageName)
     }
+    .transition(effect)
   }
   
   var orderView: some View {
