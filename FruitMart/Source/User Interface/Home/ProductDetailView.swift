@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+  @EnvironmentObject private var store: Store
   let product: Product
   
   @State private var quantity: Int = 1
+  @State private var showingAlert: Bool = false
   
   // MARK: Body
   
@@ -21,6 +23,7 @@ struct ProductDetailView: View {
       orderView
     }
     .edgesIgnoringSafeArea(.top)
+    .alert(isPresented: $showingAlert) { confirmAlert }
   }
 }
 
@@ -83,7 +86,9 @@ private extension ProductDetailView {
   }
   
   var placeOrderButton: some View {
-    Button(action: { }) {
+    Button(action: {
+      self.showingAlert = true
+    }) {
       Capsule()
         .fill(Color.peach)
         .frame(maxWidth: .infinity, minHeight: 30, maxHeight: 55)
@@ -94,6 +99,16 @@ private extension ProductDetailView {
     }
   }
   
+  var confirmAlert: Alert {
+    Alert(
+      title: Text("주문 확인"),
+      message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
+      primaryButton: .default(Text("확인"), action: {
+        self.placeOrder()
+      }),
+      secondaryButton: .cancel(Text("취소"))
+    )
+  }
   
   // MARK: Computed Values
   
@@ -107,6 +122,12 @@ private extension ProductDetailView {
     let lhsString = text[..<afterSpaceIdx].trimmingCharacters(in: .whitespaces)
     let rhsString = text[afterSpaceIdx...].trimmingCharacters(in: .whitespaces)
     return String(lhsString + "\n" + rhsString)
+  }
+  
+  // MARK: Action
+  
+  func placeOrder() {
+    store.placeOrder(product: product, quantity: quantity)
   }
 }
 
