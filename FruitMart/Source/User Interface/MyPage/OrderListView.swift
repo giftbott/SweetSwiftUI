@@ -23,6 +23,7 @@ struct OrderListView: View {
     }
     .animation(.default)
     .navigationBarTitle("주문 목록")
+    .navigationBarItems(trailing: editButton)
   }
 }
 
@@ -35,6 +36,8 @@ private extension OrderListView {
       ForEach(store.orders) {
         OrderRow(order: $0)
       }
+      .onDelete(perform: store.deleteOrder(at:))
+      .onMove(perform: store.moveOrder(from:to:))
     }
   }
   
@@ -49,6 +52,12 @@ private extension OrderListView {
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(Color.background)
+  }
+  
+  var editButton: some View {
+    !store.orders.isEmpty
+      ? AnyView(EditButton())
+      : AnyView(EmptyView())
   }
 }
 
