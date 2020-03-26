@@ -28,7 +28,7 @@ struct MainTabView: View {
       .accentColor(.primary)
     }
     .accentColor(.peach)
-    .edgesIgnoringSafeArea(.top)
+    .edgesIgnoringSafeArea(edges)
     .statusBar(hidden: selectedTab == .recipe)
   }
 }
@@ -61,6 +61,16 @@ private extension MainTabView {
       .tag(Tabs.myPage)
       .tabItem(image: "person", text: "마이페이지")
       .onAppear { UITableView.appearance().separatorStyle = .singleLine }
+  }
+  
+  // MARK: Computed Values
+  
+  var edges: Edge.Set {
+    if #available(iOS 13.4, *) {
+      return .init()
+    } else {
+      return .top
+    }
   }
 }
 
