@@ -21,7 +21,6 @@ struct OrderListView: View {
         orderList
       }
     }
-    .animation(.default)
     .navigationBarTitle("주문 목록")
     .navigationBarItems(trailing: editButton)
   }
@@ -36,7 +35,11 @@ private extension OrderListView {
       ForEach(store.orders) {
         OrderRow(order: $0)
       }
-      .onDelete(perform: store.deleteOrder(at:))
+      .onDelete { indexes in
+        withAnimation {
+          store.deleteOrder(at: indexes)
+        }
+      }
       .onMove(perform: store.moveOrder(from:to:))
     }
   }

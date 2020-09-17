@@ -40,21 +40,24 @@ fileprivate struct Popup<Message: View>: ViewModifier {
   }
 
   private var popupContent: some View {
-    GeometryReader {
+    GeometryReader { g in
       VStack { self.message }
-        .frame(width: self.size?.width ?? $0.size.width * 0.6,
-               height: self.size?.height ?? $0.size.height * 0.25)
+        .frame(width: self.size?.width ?? g.size.width * 0.6,
+               height: self.size?.height ?? g.size.height * 0.25)
         .background(Color.primary.colorInvert())
         .cornerRadius(12)
         .shadow(color: .primaryShadow, radius: 15, x: 5, y: 5)
         .overlay(self.checkCircleMark, alignment: .top)
+        // iOS 13과 iOS 14의 지오메트리 리더 뷰 정렬 위치가 달라졌으므로 조정
+        .position(x: g.size.width / 2, y: g.size.height / 2)
     }
   }
 
   private var checkCircleMark: some View {
     Symbol("checkmark.circle.fill", color: .peach)
       .font(Font.system(size: 60).weight(.semibold))
-      .background(Color.white.scaleEffect(0.8))
+      // iOS 13과 14에서 크기 차이가 있어 조정
+      .background(Color.white.scaleEffect(0.7))
       .offset(x: 0, y: -20)
   }
 }

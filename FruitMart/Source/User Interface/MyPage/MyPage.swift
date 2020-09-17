@@ -22,6 +22,7 @@ struct MyPage: View {
       VStack {
         userInfo
         
+        // iOS 14.0에서 Form의 기본 스타일이 InsetGroupedListStyle로 조정
         Form {
           orderInfoSection
           appSettingSection

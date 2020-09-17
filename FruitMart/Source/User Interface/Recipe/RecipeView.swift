@@ -94,7 +94,6 @@ private extension RecipeView {
     .frame(height: 2)
     .padding(.top)
     .padding(.bottom, 32)
-    .animation(.easeInOut(duration: 0.6))
   }
 
   func currentIndicator(proxy: GeometryProxy) -> some View {

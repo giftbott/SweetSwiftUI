@@ -63,11 +63,15 @@ private extension FavoriteProductScrollView {
   }
   
   func eachProduct(_ product: Product) -> some View {
-    GeometryReader {
-      ResizedImage(product.imageName, renderingMode: .original)
-        .clipShape(Circle())
-        .frame(width: 90, height: 90)
-        .scaleEffect(self.scaledValue(from: $0))
+    GeometryReader { g in
+      VStack {
+        ResizedImage(product.imageName, renderingMode: .original)
+          .clipShape(Circle())
+          .frame(width: 90, height: 90)
+          .scaleEffect(self.scaledValue(from: g))
+      }
+      // iOS 13과 iOS 14의 지오메트리 리더 뷰 정렬 위치가 달라졌으므로 조정
+      .position(x: g.size.width / 2, y: g.size.height / 2)
     }
     .frame(width: 105, height: 105)
   }

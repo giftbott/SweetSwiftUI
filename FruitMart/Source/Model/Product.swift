@@ -15,6 +15,11 @@ struct Product {
   let price: Int
   let description: String
   var isFavorite: Bool = false
+  
+  // Xcode 12에서 id에 발생하는 Warning 제거
+  private enum CodingKeys: CodingKey {
+    case name, imageName, price, description, isFavorite
+  }
 }
 
 extension Product: Codable {}

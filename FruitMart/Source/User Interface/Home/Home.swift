@@ -50,15 +50,17 @@ private extension Home {
   var productList: some View {
     List {
       ForEach(store.products) { product in
-        HStack {
-          ProductRow(product: product, quickOrder: self.$quickOrder)
-          NavigationLink(destination: ProductDetailView(product: product)) {
-            EmptyView()
-          }.frame(width: 0).hidden()
+        // iOS 13에서 디스클로저 인디케이터를 제거하기 위한 임시 방편이
+        // iOS 14에서 동작하지 않으므로 관련 코드 제거
+        NavigationLink(destination: ProductDetailView(product: product)) {
+          ProductRow(product: product, quickOrder: $quickOrder)
         }
       }
       .listRowBackground(Color.background)
     }
+    // iOS 14.0에서는 NavigationView - VStack - List일 때 SidebarListStyle이 기본값
+    // iOS 13의 기본값이었던 PlainListStyle로 수정
+    .listStyle(PlainListStyle())
     .background(Color.background)
   }
 
